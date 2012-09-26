@@ -8,11 +8,18 @@ Ieee::Application.routes.draw do
   get "calendar" => "events#calendar", :as => "calendar"
   get "hope" => "hope#about", :as => "hope/about"
   get "about" => "about#information", :as => "about/information"
+  get "indrel" => "industry#information", :as => "industry/information"
+  get "industry" => "industry#information", :as => "industry/information"
 
   scope :as => :statics do
     get 'scope' => 'statics#scope', :as => 'scope'
-    get 'indrel' => 'statics#indrel', :as => 'indrel'
     get 'subscribe' => 'statics#subscribe', :as => 'subscribe'
+  end
+  
+  scope "industry", :as => :industry do
+    get 'information' => 'industry#information', :as => 'information'
+    get 'sponsors' => 'industry#sponsors', :as => 'sponsors'
+    get 'donate' => 'industry#donate', :as => 'donate'
   end
 
   scope "hope", :as => :hope do
@@ -24,9 +31,9 @@ Ieee::Application.routes.draw do
   
   scope "about", :as => :about do
     get 'information' => 'about#information', :as => 'information'
-	get 'officers' => 'about#officers', :as => 'officers'
-	get 'advisor' => 'about#advisor', :as => 'advisor'
-	get 'contact' => 'about#contact', :as => 'contact'
+    get 'officers' => 'about#officers', :as => 'officers'
+    get 'advisor' => 'about#advisor', :as => 'advisor'
+    get 'contact' => 'about#contact', :as => 'contact'
   end
 
   root :to => "users#home"

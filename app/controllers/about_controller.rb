@@ -1,6 +1,9 @@
 class AboutController < ApplicationController
 
   def information
+    if request.url != about_information_url
+      redirect_to about_information_url
+    end
   end
 
   def officers
