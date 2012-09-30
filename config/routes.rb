@@ -13,6 +13,7 @@ Ieee::Application.routes.draw do
     get 'scope' => 'statics#scope', :as => 'scope'
     get 'indrel' => 'statics#indrel', :as => 'indrel'
     get 'subscribe' => 'statics#subscribe', :as => 'subscribe'
+    get 'donate' => 'statics#donate', :as => 'donate'
   end
 
   scope "hope", :as => :hope do
