@@ -1,0 +1,15 @@
+%h1 Industrial Relations
+
+%div#industry_nav
+  - %w(information sponsors donate).each do |name|
+    = link_to name.upcase, name, :id => "industry_#{name}", :class => "industry_nav_link"
+
+%p IEEE is a leading authority on areas ranging from aerospace systems, computers and telecommunications to biomedical engineering, electric power and consumer electronics among others. As the local chapter of IEEE, we strive to provide a faucet of talent and skill to the industry. As one of the world's leading engineering institutions, you can expect nothing but the best from UC Berkeley.
+%h2 Infosessions
+%p In conjunction with the Electrical Engineering and Computer Science Department, UC Berkeley IEEE also co-hosts several recruiting and publicity Infosessions throughout the year. With typical attendances of over 60 people, our Infosessions are an effective means of reaching the EECS community. We publicize, staff, and acquire food for these events. All you bring is the presentation. Contact us to work out the logistics of holding an Infosession.
+%h2 Resume Book
+%p Coming soon! Contact us for more information.
+%h2 Corporate Sponsorship Package
+%p Coming soon! Contact us for more information.
+%h2 Contact
+%p Email us at #{mail_to "ieee@berkeley.edu"}

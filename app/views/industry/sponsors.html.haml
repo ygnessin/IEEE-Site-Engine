@@ -1,0 +1,7 @@
+%h1 Corporate Sponsors
+
+%div#industry_nav
+  - %w(information sponsors donate).each do |name|
+    = link_to name.upcase, name, :id => "industry_#{name}", :class => "industry_nav_link"
+
+%p Coming soon!
