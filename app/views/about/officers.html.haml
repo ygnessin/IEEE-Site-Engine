@@ -15,7 +15,7 @@
 	- %w(information officers advisor contact).each do |name|
 		= link_to name.upcase, name, :id => "about_#{name}", :class => "about_nav_link"
 
-%h2{:style => "clear:both;"} Executives
+%h2 Executives
 %hr
 %br
 - @execs.each do |filename, officer|
