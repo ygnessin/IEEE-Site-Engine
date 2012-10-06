@@ -14,6 +14,7 @@ Ieee::Application.routes.draw do
   scope :as => :statics do
     get 'scope' => 'statics#scope', :as => 'scope'
     get 'subscribe' => 'statics#subscribe', :as => 'subscribe'
+    get 'donate' => 'statics#donate', :as => 'donate'
   end
   
   scope "industry", :as => :industry do
