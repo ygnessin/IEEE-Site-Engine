@@ -15,7 +15,7 @@
 	- %w(information officers advisor contact).each do |name|
 		= link_to name.upcase, name, :id => "about_#{name}", :class => "about_nav_link"
 
-%h2 Executives
+%h2{:style => "clear:both;"} Executives
 %hr
 %br
 - @execs.each do |filename, officer|
@@ -27,7 +27,7 @@
 			= officer[1]
 %br 
 %br 
-%h2 Activities
+%h2{:style => "clear:both;"} Activities
 %hr
 %br
 - @activities.each do |filename, officer|
@@ -38,7 +38,7 @@
 			- if @activities.index(officer) == 0
 				%br
 				Director
-%h2 HOPE
+%h2{:style => "clear:both;"} HOPE
 %hr
 %br
 - @hope.each do |filename, officer|
@@ -51,7 +51,7 @@
 				Director
 %br 
 %br
-%h2 Industrial Relations
+%h2{:style => "clear:both;"} Industrial Relations
 %hr
 %br
 - @indrel.each do |filename, officer|
@@ -64,7 +64,7 @@
 				Director
 %br 
 %br
-%h2 I/O
+%h2{:style => "clear:both;"} I/O
 %hr
 %br
 - @io.each do |filename, officer|
@@ -75,7 +75,7 @@
 			- if @io.index(officer) == 0
 				%br
 				Director
-%h2 Professional Development
+%h2{:style => "clear:both;"} Professional Development
 %hr
 %br
 - @prodev.each do |filename, officer|
@@ -86,7 +86,7 @@
 			- if @prodev.index(officer) == 0
 				%br
 				Director
-%h2 Technical Operations
+%h2{:style => "clear:both;"} Technical Operations
 %hr
 %br
 - @techops.each do |filename, officer|
@@ -97,7 +97,7 @@
 			- if @techops.index(officer) == 0
 				%br
 				Director
-%h2 Website
+%h2{:style => "clear:both;"} Website
 %hr
 %br
 - @website.each do |filename, officer|
