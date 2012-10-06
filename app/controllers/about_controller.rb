@@ -13,7 +13,7 @@ class AboutController < ApplicationController
     @indrel = {'default.jpg'=>'Vikram Iyer', 'default.jpg'=>'Jonathan Hsu', 'Marion.jpg'=>'Marion Halim', 'default.jpg'=>'Kevin Chian', 'default.jpg'=>'Jamshed Vesuna', 'Harrison.jpg'=>'Harrison Tsai', 'default.jpg'=>"Alton Zheng"}
     @io = {'Nate.jpg'=>'Nate Holland', 'Lauren.jpg'=>'Lauren Janney', 'Flora.jpg'=>'Flora Dai', 'Anthony.jpg'=>'Anthony Sutardja', 'Tabitha.jpg'=>'Tabitha King'}
     @prodev = {'Skyler.jpg'=>'Skyler Rojas', 'Parul.jpg'=>'Parul Singh', 'Michael.jpg'=>'Michael Romain', 'default.jpg'=>'Andrew Qin', 'Yerin'=>'Yerin Kim'}
-    @techops = {'Mark Hettick', 'Felix.jpg'=>'Felix Wong', 'default.jpg'=>'Chris Meredith', 'Alex.jpg' => 'Alex Romano', 'William.jpg'=>'William Ku', 'default.jpg'=>'Nelson Zhang', 'Eugene.jpg'=>'Eugene Wong'}
+    @techops = {'default.jpg'=>'Mark Hettick', 'Felix.jpg'=>'Felix Wong', 'default.jpg'=>'Chris Meredith', 'Alex.jpg' => 'Alex Romano', 'William.jpg'=>'William Ku', 'default.jpg'=>'Nelson Zhang', 'Eugene.jpg'=>'Eugene Wong'}
     @website = {'Kevin.jpg' =>' Kevin Sheng', 'Yuval.jpg'=>'Yuval Gnessin', 'Tom.jpg'=>'Tom McCormick', 'default.jpg'=>'Steve Yadlowsky', 'Jessika.jpg'=>'Jessika Wu', 'David.jpg'=>'David Su'}
 
 #    @execs = [['Tianbo Xu', 'Chair'], ['Pranava Adduri', 'External VP'], ['Mark Hettick', 'Internal VP'], ['Gabe Fierro', 'Secretary'], ['Jeff Tsui', 'Treasurer']]
