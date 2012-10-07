@@ -30,6 +30,7 @@ class ApplicationController < ActionController::Base
   end
 
   def featured_albums
-    Picasa.albums.first(ApplicationHelper::THUMBNAILS_LIMIT)
+    client = Picasa::Client.new(:user_id => "ieeeucb@gmail.com")
+    client.album.list.entries.first(ApplicationHelper::THUMBNAILS_LIMIT)
   end
 end
