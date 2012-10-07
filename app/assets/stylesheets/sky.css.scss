@@ -3,7 +3,7 @@
 html,body {
     padding: 0px;
     margin: 0px;
-    background: url("../images/sky/body_bg.png");
+    background: image-url("sky/body_bg.png");
     font-family: 'Droid Sans', Arial, 'Letter Gothic Std';
     font-size: 13px;
     color: #343434;
@@ -134,7 +134,7 @@ p {
 }
 
 #footer {
-  background: url("../images/sky/usernav_bg.png");
+  background: image-url("sky/usernav_bg.png");
   height: $footer_height;
   min-width: $content_width;
   clear:both;
@@ -163,7 +163,7 @@ p {
 }
 
 #page_header {
-    background: url("../images/sky/header_bg.png");
+    background: image-url("sky/header_bg.png");
     height: $header_height;
 	border-width: 0px 10px 0px 0px;
 

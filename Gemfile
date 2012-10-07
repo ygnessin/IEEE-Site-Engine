@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.0.0'
+gem 'rails', '~> 3.1.1'
 gem 'haml'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'jquery-rails', '>= 1.0.19'
@@ -16,9 +16,10 @@ gem 'thin'
 # Gems used only for assets and not required
 # in production environments by default
 group :assets do
-  gem 'sass-rails', "~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem 'sass-rails', "= 3.1.4"
+  gem 'coffee-rails', "~> 3.1.1"
   gem 'uglifier'
+  gem 'sprockets'
 end
 
 # Bundle edge Rails instead:

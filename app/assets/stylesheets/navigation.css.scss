@@ -1,7 +1,7 @@
 @import "globals";
 
 #user_nav {
-  background: url("../images/sky/usernav_bg.png");
+  background: image-url("sky/usernav_bg.png");
   height: $usernav_height;
   line-height: $usernav_height;
   
@@ -29,7 +29,7 @@
 		float: left;
         width: 100px;
 		height: 30px;
-		background:url("../images/sky/ieee_logo.jpg");
+		background: image-url("sky/ieee_logo.jpg");
      }
 
     &.link_login {
@@ -43,7 +43,7 @@
 }
 
 #header {
-  background: url("../images/sky/header_bg.png");
+  background: image-url("sky/header_bg.png");
   height: $header_height;
   border-width: 0px 10px 0px 0px;
 
@@ -62,7 +62,7 @@
       width: $navigation_width;
 
       a {
-        background: url("../images/sky/navigation.png");
+        background: image-url("sky/navigation.png");
         height: 11px;
         text-indent: -9000px;
         @include floater(block, left);
