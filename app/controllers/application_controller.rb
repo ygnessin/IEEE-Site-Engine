@@ -1,8 +1,17 @@
+require "pp"
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  before_filter :allow_only_ssl
+
   helper_method :current_user, :upcoming_events, :recent_posts, :has_permission, :featured_albums
   private
+
+  def allow_only_ssl
+    if request.headers["HTTP_X_FORWARDED_PROTO"] != "https"
+      redirect_to url_for params.merge({:protocol => 'https://'})
+    end
+  end
 
   def has_permission
     unless current_user

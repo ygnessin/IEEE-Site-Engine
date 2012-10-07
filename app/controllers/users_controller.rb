@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_filter :has_permission, :except => [:home]
+  skip_before_filter :allow_only_ssl, :only => [:home]
 
   def new
     @user = User.new
