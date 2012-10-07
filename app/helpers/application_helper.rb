@@ -7,7 +7,7 @@ module ApplicationHelper
       'link', {
         :rel => :stylesheet,
         :type => Mime::CSS,
-        :href => "http://fonts.googleapis.com/css?family=#{family.sub(' ', '+')}"
+        :href => "https://fonts.googleapis.com/css?family=#{family.sub(' ', '+')}"
       },
       false, 
       false

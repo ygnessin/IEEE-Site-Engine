@@ -11,6 +11,7 @@ gem 'tilt', "~> 1.3.3"
 gem 'rake', "~> 0.9.2"
 gem 'googlecalendar'
 gem 'will_paginate'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default
