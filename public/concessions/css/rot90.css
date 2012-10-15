@@ -1,0 +1,8 @@
+body {
+   -webkit-transform: rotate(90deg); 
+   -moz-transform: rotate(90deg);
+}
+
+input#barcode_input {
+  margin-top:             00px;
+}
