@@ -8,8 +8,10 @@ class ApplicationController < ActionController::Base
   private
 
   def allow_only_ssl
+    if Rails.env.production?
     if request.headers["HTTP_X_FORWARDED_PROTO"] != "https"
       redirect_to url_for params.merge({:protocol => 'https://'})
+    end
     end
   end
 
