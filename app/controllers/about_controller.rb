@@ -7,14 +7,14 @@ class AboutController < ApplicationController
   end
 
   def officers
-    @execs = {'Jeff.jpg' => ['Jeff Tsui', 'Chair'], 'Noel.jpg' => ['Noel Moldvai', 'External VP'], 'Ayushi.jpg' => ['Ayushi Samaddar', 'Internal VP'], 'Guillaume.jpg' => ['Guillaume Bellegarda', 'Treasurer'], 'Annie.jpg' => ['Annie Shin', 'Secretary']}
-    @activities = {'default.jpg'=>'Sean Soleyman', 'Alice.jpg'=>'Alice Lee', 'Ino.jpg'=>'Ino Samaras', 'Leland.jpg'=>'Leland Au', 'Michael_Chen.jpg'=>'Michael Chen', 'Rohan.jpg'=>'Rohan Sachdev', 'default.jpg'=>'Mano Pagalavan'}
-    @hope = {'Jeff_Lievense.jpg'=>'Jeff Lievense', 'default.jpg'=>'Andrew Wun', 'default.jpg'=>'Milad Bayan', 'Rongchang.jpg'=>'Rongchang Lei', 'default.jpg'=>'James Yang'}
-    @indrel = {'default.jpg'=>'Vikram Iyer', 'default.jpg'=>'Jonathan Hsu', 'Marion.jpg'=>'Marion Halim', 'default.jpg'=>'Kevin Chian', 'default.jpg'=>'Jamshed Vesuna', 'Harrison.jpg'=>'Harrison Tsai', 'default.jpg'=>"Alton Zheng"}
-    @io = {'Nate.jpg'=>'Nate Holland', 'Lauren.jpg'=>'Lauren Janney', 'Flora.jpg'=>'Flora Dai', 'Anthony.jpg'=>'Anthony Sutardja', 'Tabitha.jpg'=>'Tabitha King'}
-    @prodev = {'Skyler.jpg'=>'Skyler Rojas', 'Parul.jpg'=>'Parul Singh', 'Michael.jpg'=>'Michael Romain', 'default.jpg'=>'Andrew Qin', 'Yerin.jpg'=>'Yerin Kim'}
-    @techops = {'default.jpg'=>'Mark Hettick', 'Felix.jpg'=>'Felix Wong', 'default.jpg'=>'Chris Meredith', 'Alex.jpg' => 'Alex Romano', 'William.jpg'=>'William Ku', 'default.jpg'=>'Nelson Zhang', 'Eugene.jpg'=>'Eugene Wong'}
-    @website = {'Kevin.jpg' =>' Kevin Sheng', 'Yuval.jpg'=>'Yuval Gnessin', 'Tom.jpg'=>'Tom McCormick', 'default.jpg'=>'Steve Yadlowsky', 'Jessika.jpg'=>'Jessika Wu', 'David.jpg'=>'David Su'}
+    @execs = {'jeff_tsui.jpg' => ['Jeff Tsui', 'Chair'], 'noel_moldvai.jpg' => ['Noel Moldvai', 'External VP'], 'ayushi_samaddar.jpg' => ['Ayushi Samaddar', 'Internal VP'], 'guillaume_bellegarda.jpg' => ['Guillaume Bellegarda', 'Treasurer'], 'annie_shin.jpg' => ['Annie Shin', 'Secretary']}
+    @activities = {'sean_soleyman.jpg'=>'Sean Soleyman', 'alice_lee.jpg'=>'Alice Lee', 'ino_samaras.jpg'=>'Ino Samaras', 'leland_au.jpg'=>'Leland Au', 'michael_chen.jpg'=>'Michael Chen', 'rohan_sachdev.jpg'=>'Rohan Sachdev', 'mano_pagalavan.jpg'=>'Mano Pagalavan'}
+    @hope = {'jeff_lievense.jpg'=>'Jeff Lievense', 'andrew_wun.jpg'=>'Andrew Wun', 'milad_bayan.jpg'=>'Milad Bayan', 'rongchang_lei.jpg'=>'Rongchang Lei', 'james_yang.jpg'=>'James Yang'}
+    @indrel = {'vikram_iyer.jpg'=>'Vikram Iyer', 'jonathan_hsu.jpg'=>'Jonathan Hsu', 'marion_halim.jpg'=>'Marion Halim', 'kevin_chian.jpg'=>'Kevin Chian', 'jamshed_vesuna.jpg'=>'Jamshed Vesuna', 'harrison_tsai.jpg'=>'Harrison Tsai', 'alton_zheng.jpg'=>"Alton Zheng"}
+    @io = {'nate_holland.jpg'=>'Nate Holland', 'lauren_janney.jpg'=>'Lauren Janney', 'flora_dai.jpg'=>'Flora Dai', 'anthony_sutardja.jpg'=>'Anthony Sutardja', 'tabitha_king.jpg'=>'Tabitha King'}
+    @prodev = {'skyler_rojas.jpg'=>'Skyler Rojas', 'parul_singh.jpg'=>'Parul Singh', 'michael_romain.jpg'=>'Michael Romain', 'andy_qin.jpg'=>'Andrew Qin', 'yerin_kim.jpg'=>'Yerin Kim'}
+    @techops = {'felix_wong.jpg'=>'Felix Wong', 'alex_romano.jpg' => 'Alex Romano', 'william_ku.jpg'=>'William Ku', 'nelson_zhang.jpg'=>'Nelson Zhang', 'eugene_wong.jpg'=>'Eugene Wong'}
+    @website = {'kevin_sheng.jpg' =>' Kevin Sheng', 'yuval_gnessin.jpg'=>'Yuval Gnessin', 'tom_mccormick.jpg'=>'Tom McCormick', 'steve_yadlowsky.jpg'=>'Steve Yadlowsky', 'jessika_wu.jpg'=>'Jessika Wu', 'david_su.jpg'=>'David Su'}
 
 #    @execs = [['Tianbo Xu', 'Chair'], ['Pranava Adduri', 'External VP'], ['Mark Hettick', 'Internal VP'], ['Gabe Fierro', 'Secretary'], ['Jeff Tsui', 'Treasurer']]
 #    @activities = ['Leland Au', 'Alice Lee', 'Amanda Ren', 'Annie Shin', 'Edward Wu']
