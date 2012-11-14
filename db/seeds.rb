@@ -46,5 +46,14 @@
                 :description => fake_description,
                 :event_start => fake_event_start,
                 :event_end => fake_event_end})
+
+  #<Post id: nil, title: nil, content: nil, created_at: nil,
+  #updated_at: nil, author_id : nil>
+  fake_post_title = "Fake Post #{num}"
+  fake_post_content = "Fake Content #{num} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque blandit metus eu elementum. Nulla facilisi. In hac habitasse platea dictumst. In sit amet nulla at leo placerat aliquet lacinia et tortor. Nullam eget eros quam, quis vulputate nisi. Aliquam vulputate semper odio, vitae commodo sem sodales non. Aliquam bibendum consequat lacus, vitae rutrum est convallis eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pulvinar aliquam nisl vitae iaculis. Fusce vulputate arcu eget nibh iaculis id placerat ligula ultricies. Fusce lacinia cursus leo at consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ut erat risus. Proin lorem odio, dictum quis mollis et, bibendum a urna. Integer non sodales mi."
+  Post.create({:title => fake_post_title,
+               :content => fake_post_content,
+               :author_id => fake_author_id,
+              })
 end
 
