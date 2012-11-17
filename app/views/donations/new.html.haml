@@ -19,8 +19,8 @@
         %option Recruiting Event Expenses
         %option Recruiting Event Donation
         %option Other
-    .form-row
-      %script.stripe-button{:src => "https://button.stripe.com/v1/button.js", "data-key" => @publishable_key}
+    .form-row.stripe
+      %script.stripe-button{:src => "https://button.stripe.com/v1/button.js", "data-key" => @publishable_key, "data-label" => 'Donate'}
 
 %p#html5-warning
   Form not displaying properly? Try switching to an HTML5-compliant browser.
