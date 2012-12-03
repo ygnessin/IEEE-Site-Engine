@@ -1,6 +1,12 @@
 class EventsController < ApplicationController
   before_filter :has_permission, :except => [:show, :calendar, :index]
-    
+
+  helper_method :all_events
+
+  def all_events
+    Event.paginate(:page => params[:page], :per_page => 4).order('event_start desc')
+  end
+
   def index
     @e = Event.order("event_start desc")
     @user = current_user
