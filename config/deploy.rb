@@ -10,7 +10,7 @@ set :user, "deployer"  # The server's user for deploys
 set :branch, "master"
 set :deploy_via, :remote_cache
 
-set :deploy_to, "/srv/ieee-main/#{Time.now.strftime("%Y%m%d")}"
+set :deploy_to, "/srv/ieee-main"
 
 role :web, "ieee.berkeley.edu"                          # Your HTTP server, Apache/etc
 role :app, "ieee.berkeley.edu"                          # This may be the same as your `Web` server
