@@ -5,7 +5,7 @@ set :repository,  "git@github.com:IEEEBerkeley/IEEE-Site-Engine.git"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 set :scm, "git"
-set :user, "deploy"  # The server's user for deploys
+set :user, "deployer"  # The server's user for deploys
 
 set :branch, "master"
 set :deploy_via, :remote_cache
