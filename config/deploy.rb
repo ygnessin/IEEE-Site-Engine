@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+
 set :application, "IEEE Main Site"
 set :repository,  "git://github.com/IEEEBerkeley/IEEE-Site-Engine.git"
 
