@@ -38,7 +38,7 @@ end
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # Use the stripe API ruby lib for payments
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
