@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.1'
+gem 'rails', '~> 3.1.10'
 gem 'haml'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'jquery-rails', '>= 1.0.19'
@@ -31,7 +31,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'therubyracer'
+  gem 'therubyracer', "~>0.10.2"
 end
 
 # Use unicorn as the web server
