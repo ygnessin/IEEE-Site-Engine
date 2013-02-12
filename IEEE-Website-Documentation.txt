@@ -22,6 +22,8 @@ For Rails information, see README.md in this folder. It contains useful informat
 
 6) After your gems finish installing, while still in the main folder, enter "rails server" or "rails s". This will start up a Ruby on Rails webserver right on your own machine! Wait for the server to finish booting, which can take up to a minute on some computers (you'll know it's done when it prints 3 timestamped lines). Then, open your favorite web browser and type http://localhost:3000/ in the URL bar. It might take a while the first time, but you will see a local copy of our website displayed in your browser. Awesome! Also, in the command line window, you can see all the HTTP requests being sent and received, such as GET and POST. When you're done, shut down the server with Ctrl-C.
 
+7) If you're really having trouble getting all this to work (especially if you're on Windows), and you've already exhausted online resources such as google and stackoverflow.com then as a last resort you may consider installing the saasbook Virtual Machine from http://beta.saasbook.info/bookware-vm-instructions under "Downloading and Installing the Courseware". It's an Ubuntu VM already set up with Rails, designed for CS169. If you use it you can probably start from step 2.
+
 
 ----------DEVELOPING WITH GIT----------
 
@@ -58,9 +60,7 @@ git push origin master
 If you have access to the IEEEBerkeley group, then instead you can simply do:
 git push upstream master
 
-6) Occasionally while developing you may encounter merge conflicts. If the conflicts are with another developer's code that you don't fully understand, it is important to get in touch when resolving the conflict to make sure you don't mess up each other's code.
-
-For basic explanations on branching, merging, and conflict resolution:
+6) Occasionally while developing you may encounter merge conflicts. If the conflicts are with another developer's code that you don't fully understand, it is important to get in touch when resolving the conflict to make sure you don't mess up each other's code. For basic explanations on branching, merging, and conflict resolution:
 http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging
 
 7) If and only if you are simply making a small one- or two-line change, then there's no need to make a new branch. Skip step 2, and instead of step 4 simply pull and then do a "git push origin master"
