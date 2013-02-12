@@ -28,6 +28,6 @@ role :db,  "ieee.berkeley.edu", :primary => true # This is where Rails migration
 namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "source /etc/thin/set-secret-keys.sh"
-    run "thin restart -C /etc/thin/ieee-main.yml"
+    run "cd /srv/ieee-main/current && bundle exec thin restart -C /etc/thin/ieee-main.yml"
   end
 end
