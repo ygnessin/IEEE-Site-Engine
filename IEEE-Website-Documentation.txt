@@ -41,7 +41,8 @@ If you're resuming work on a feature you haven't yet finished, then only run the
 3) Write your code. Whenever you finish a working chunk, commit it. Good practice is to commit early and often, but try to only commit code that works.
 
 git status                      // see what you've changed
-git add *filename*              // add modified files to your commit
+git add *filename*              // add modified files you want to commit
+git status                      // make sure everything is correct
 git commit -m "your message"    // IMPORTANT: write a descriptive commit message
 
 4) When you're done working on your feature (probably after several commits), it's time to rebase and merge your branch back into your master branch:
@@ -61,6 +62,8 @@ git push upstream master
 
 For basic explanations on branching, merging, and conflict resolution:
 http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging
+
+7) If and only if you are simply making a small one- or two-line change, then there's no need to make a new branch. Skip step 2, and instead of step 4 simply pull and then do a "git push origin master"
 
 
 ----------DEPLOYING TO PRODUCTION----------
