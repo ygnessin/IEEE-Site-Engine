@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.1'
+gem 'rails', '~> 3.1.10'
 gem 'haml'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'jquery-rails', '>= 1.0.19'
@@ -30,8 +30,8 @@ group :test, :development do
 end
 
 group :production do
-  gem 'sqlite3'
-  gem 'therubyracer'
+  gem 'pg'
+  gem 'therubyracer', "~>0.10.2"
 end
 
 # Use unicorn as the web server
