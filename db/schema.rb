@@ -14,18 +14,18 @@
 ActiveRecord::Schema.define(:version => 20121005044734) do
 
   create_table "donations", :force => true do |t|
-    t.string   "name"
-    t.string   "company"
+    t.text     "name"
+    t.text     "company"
     t.integer  "amount"
-    t.string   "description"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "events", :force => true do |t|
-    t.string   "title"
-    t.string   "location"
-    t.string   "description"
+    t.text     "title"
+    t.text     "location"
+    t.text     "description"
     t.datetime "event_start"
     t.datetime "event_end"
     t.datetime "created_at"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(:version => 20121005044734) do
   end
 
   create_table "posts", :force => true do |t|
-    t.string   "title"
+    t.text     "title"
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -44,21 +44,21 @@ ActiveRecord::Schema.define(:version => 20121005044734) do
   create_table "signups", :force => true do |t|
     t.integer  "user_id"
     t.integer  "event_id"
-    t.string   "role"
+    t.text     "role"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "attended"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email"
-    t.string   "password_hash"
-    t.string   "password_salt"
+    t.text     "email"
+    t.text     "password_hash"
+    t.text     "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
+    t.text     "name"
     t.integer  "year"
-    t.string   "position"
+    t.text     "position"
   end
 
 end
