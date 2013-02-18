@@ -42,11 +42,14 @@ class SignupsController < ApplicationController
       if @s.save
         format.html {redirect_to event_path(@s.event), :notice => "Changed attended to "+@s.attended.to_s+" for "+@u.email}
         format.xml {head :ok}
+        format.js { render :locals =>{:attended => @s.attended }}
       else
         format.html {redirect_to event_path(@s.event), :notice => "Change was unsuccessful"}
         format.xml {render :xml => @s.errors, :status => :unprocessable_entity}
+        format.js { render :locals =>{:attended => @s.attended }}
+
       end
     end
   end
-  
+
 end
