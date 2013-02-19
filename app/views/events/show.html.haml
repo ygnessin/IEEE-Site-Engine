@@ -9,13 +9,13 @@
   .description
     = @e.description
 
+- if current_user
   - if has_permission
     .option
       = link_to "Edit", edit_event_path(@e)
     .option
       = link_to "Delete", event_path(@e), :method => "delete"
 
-- if current_user
   - if Signup.where(:event_id => @e.id).length > 0
     %h2 Attending
   - if Signup.exists?
@@ -23,9 +23,15 @@
     - num_attendees = s.where(:attended => true).count()
     - num_signups = s.count()
 
-    %b Summary:
-    %span Signups: #{num_signups},  Attendance: 
-    %span{ :class => 'num-attendees' }#{num_attendees}
+    %table
+      %tr
+        %td 
+          %b Summary:
+        %td 
+          %span Signups: #{num_signups}
+        %td
+          %span Attendance: 
+          %span{ :class => 'num-attendees' }#{num_attendees}
 
     %table
       - if num_signups > 0
@@ -50,8 +56,8 @@
               %td 
                 = button_to reverse_attendance, users_mark_path(u,s.id),:action => "mark", :controller => "signups",:class=>'%d-confirm' % u.id, :remote => true
     - if Signup.where(:event_id => @e.id, :user_id=> current_user.id).length == 0
-      = link_to "Signup", events_signups_new_path(@e) 
+      = link_to "Sign up", events_signups_new_path(@e) 
     - else
-      = link_to "Edit Signup", events_signups_edit_path(@e.id, s.id) 
+      = link_to "Update sign up", events_signups_edit_path(@e.id, s.id) 
 
 
