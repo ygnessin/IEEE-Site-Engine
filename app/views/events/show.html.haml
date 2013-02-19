@@ -18,8 +18,6 @@
 - if current_user
   - if Signup.where(:event_id => @e.id).length > 0
     %h2 Attending
-  /\ #{u.name} Attended: #{s.attended}, Role: #{ Role.where(:id => s.role).first.name}
-  /= link_to u.email, users_mark_path(u, s.id), :method => "post"
   - if Signup.exists?
     - s = Signup.where(:event_id => @e.id)
     - num_attendees = s.where(:attended => true).count()
@@ -42,7 +40,7 @@
             - s = u.signups.where(:event_id => @e.id).first
             - attended = s.attended ? 'Yes': 'No'
             - reverse_attendance = s.attended ? 'No' : 'Yes'
-            - data_arr = [u.name.capitalize, u.email, attended , s.role]#Role.where(:id => s.role).first.name]
+            - data_arr = [u.name.capitalize, u.email, attended , s.role]
             - data_arr.each do |w|
               - if w == attended
                 %td{:class => '%d-attendance' % u.id}#{w}
@@ -53,5 +51,7 @@
                 = button_to reverse_attendance, users_mark_path(u,s.id),:action => "mark", :controller => "signups",:class=>'%d-confirm' % u.id, :remote => true
     - if Signup.where(:event_id => @e.id, :user_id=> current_user.id).length == 0
       = link_to "Signup", events_signups_new_path(@e) 
+    - else
+      = link_to "Edit Signup", events_signups_edit_path(@e.id, s.id) 
 
 

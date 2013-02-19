@@ -5,6 +5,10 @@ class SignupsController < ApplicationController
   def new
     @signup = Signup.new
     @e = Event.find(params[:event_id])
+    if Signup.where(:event_id=>params[:event_id], :user_id => current_user.id).length > 0
+      @signup = Signup.where(:event_id=>params[:event_id], :user_id => current_user.id)[0]
+      redirect_to events_signups_edit_path(params[:event_id],@signup.id)
+    end
   end
   
   def create
@@ -26,6 +30,25 @@ class SignupsController < ApplicationController
       else
         format.html {redirect_to events_path, :notice => "Signup wasn't successful"}
         format.xml {render :xml => @signup.errors, :status => :unprocessable_entity}        
+      end
+    end
+  end
+
+  def edit
+    @signup = Signup.find(params[:id])
+    @e = @signup.event
+    @user = @signup.user
+  end
+
+  def update
+    @signup = Signup.find(params[:id])
+    @e = @signup.event
+    @user = @signup.user
+    respond_to do |format|
+      if @signup.update_attributes(params[:signup])
+        format.html { redirect_to event_path(@e), :notice=>"Signup updated "}
+      else
+        format.html { render :action => "edit"}
       end
     end
   end
