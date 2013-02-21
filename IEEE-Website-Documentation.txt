@@ -54,7 +54,7 @@ git pull --rebase upstream master // just in case someone else pushed code
 git rebase *new-branch-name*      // http://git-scm.com/book/en/Git-Branching-Rebasing   
 git push origin master            // push your commits to your remote repo
 
-5) Finally, if you think that your changes are ready to go live on our website, go to https://github.com/IEEEBerkeley/IEEE-Site-Engine and click the button that says "Pull Request". Your changes will await approval by the Website Director.
+5) Finally, if you think that your changes are ready to go live on our website, navigate to your repository on Github and click the button that says "Pull Request". Your changes will await approval by the Website Director.
 
 If you have access to the IEEEBerkeley group, then instead you can simply do:
 git push upstream master
