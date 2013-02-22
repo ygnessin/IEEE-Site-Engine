@@ -20,9 +20,11 @@
 %br
 - @execs.each do |officer|
   .officer.execs
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer[0].downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer[0].downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
@@ -37,9 +39,11 @@
 %br
 - @activities.each do |officer|
   .officer.activities
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
@@ -53,9 +57,11 @@
 %br
 - @hope.each do |officer|
   .officer.hope.officer_three
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
@@ -71,9 +77,11 @@
 %br
 - @indrel.each do |officer|
   .officer.indrel
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
@@ -89,9 +97,11 @@
 %br
 - @io.each do |officer|
   .officer.io
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
@@ -105,9 +115,11 @@
 %br
 - @prodev.each do |officer|
   .officer.prodev.officer_four
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
@@ -121,9 +133,11 @@
 %br
 - @techops.each do |officer|
   .officer.techops.officer_six
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
@@ -137,9 +151,11 @@
 %br
 - @website.each do |officer|
   .officer.website.officer_six
-    - pn = Pathname.new("#{Dir.getwd}/app/assets/images/officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg")
+    - relative_path = "officer_pictures/2013/#{officer.downcase.gsub(' ', '_')}.jpg"
+    - path_prefix = "#{Dir.getwd}/app/assets/images/"
+    - pn = Pathname.new(path_prefix + relative_path)
     - if pn.exist?
-      = image_tag(pn.to_s, :class => "officer_pic")
+      = image_tag(relative_path, :class => "officer_pic")
     - else
       = image_tag("officer_pictures/2013/default.jpg", :class => "officer_pic")
     %div(class="title" style="opacity:0")
