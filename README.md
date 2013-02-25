@@ -97,15 +97,25 @@ That brings up the last topic, nginx. We use this to do magic SSL verification a
 FOR N00BS: WEB DEVELOPMENT PRIMER
 ==
 
-Ruby on Rails: a Ruby framework designed for web development. This is our back-end: it accesses our database, and generates HTML web content using ruby code. It uses the Model-View-Controller paradigm, which you may want to read up on. Rails abstracts all the nitty-gritty stuff like database manipulation, cookies, http requests, etc. Learn more in the Rails Info section below.
+#####Ruby
+A dynamic, reflective, object-orientated programming language similar to Python, Perl, and Lisp. It fuels Ruby on Rails.
 
-HTML: a markup language for web CONTENT. Should not be used for styling (that's CSS). Similarly, HTML styling tags such as <b> for bold are a thing of the past and should never be used. Our website uses HAML, which is really just syntactic sugar over HTML, and nothing more.
+#####Ruby on Rails
+A Ruby framework designed for web development. This is our back-end: it accesses our database, and generates HTML web content using ruby code. It uses the Model-View-Controller paradigm, which you may want to read up on. Rails abstracts all the nitty-gritty stuff like database manipulation, cookies, http requests, etc. Learn more in the Rails Info section below.
 
-CSS: for web STYLING. Should be kept separate from content (HTML). In-line CSS is bad practice, instead it should be in separate stylesheet files.
+#####HTML
+A markup language for web CONTENT. Should not be used for styling (that's CSS). Similarly, HTML styling tags such as `<b>` for bold are a thing of the past and should never be used. Our website uses HAML (file extension `.html.haml`), which is really just syntactic sugar over HTML, and nothing more. http://haml.info/about.html
 
-Javascript: a programming language that web browsers can interpret. Used for dynamically altering web pages AFTER they're loaded. If you've ever been on a webpage and seen it change after the browser already loads it, that's javascript. Like CSS, in-line JS is bad practice; it should be kept strictly in separate .js files if possible.
+#####CSS
+For web STYLING. Should be kept separate from content (HTML). In-line CSS is bad practice, instead it should be in separate stylesheet files. Our website uses Sass (file extension `.scss`), which is just an extended form of CSS that provides more functionality. Regular CSS should work as usual. http://sass-lang.com/
 
-It's important that all these facets be kept as separate as possible, e.g. HTML, CSS, and Javascript. Additionally, although inevitably sometimes ruby code needs to go in our HAML views, whenever possible it should be in the Controller or Model .rb files instead.
+#####Javascript
+A programming language that web browsers can interpret. Used for dynamically altering web pages AFTER they're loaded. If you've ever been on a webpage and seen it change after the browser already loads it, that's javascript. Like CSS, in-line JS is bad practice; it should be kept strictly in separate `.js` files if possible.
+
+#####Database
+A system that stores an application's data. It's optimized for fast retrieval of data, known as a query. The database we use is called PostgreSQL.
+
+It's important that all these facets be kept as separate as possible, e.g. HTML/HAML, CSS, and Javascript being in separate files. Additionally, although inevitably sometimes ruby code needs to go in our HAML views, whenever possible it should be in the Controller or Model ruby files (`.rb`) instead.
 
 
 RAILS INFO
