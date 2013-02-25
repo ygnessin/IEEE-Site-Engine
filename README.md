@@ -28,43 +28,43 @@ IEEE Website Documentation
 
 1. Whenever you begin developing, make sure your local repository is up-to-date:
 
-```
-cd IEEE-Site-Engine               // change directory
-git pull origin master            // pull your own changes to this machine
-git pull upstream master          // pull everyone's changes
-```
+    ```
+    cd IEEE-Site-Engine               // change directory
+    git pull origin master            // pull your own changes to this machine
+    git pull upstream master          // pull everyone's changes
+    ```
 
 2. If you're starting work on a new feature, create a branch and then checkout that branch:
 
-```
-git branch *new-branch-name*      // iff making new branch
-git checkout *new-branch-name*    // e.g. *new-branch-name* = new-officers-page
-```
+    ```
+    git branch *new-branch-name*      // iff making new branch
+    git checkout *new-branch-name*    // e.g. *new-branch-name* = new-officers-page
+    ```
 
-If you're resuming work on a feature you haven't yet finished, then only run the checkout command.
+    If you're resuming work on a feature you haven't yet finished, then only run the checkout command.
 
 3. Write your code. Whenever you finish a working chunk, commit it. Good practice is to commit early and often, but try to only commit code that works.
 
-```
-git status                        // see what you've changed
-git add *filename*                // add modified files you want to commit
-git status                        // make sure everything is correct
-git commit -m "your message"      // IMPORTANT: write a descriptive commit message
-```
+    ```
+    git status                        // see what you've changed
+    git add *filename*                // add modified files you want to commit
+    git status                        // make sure everything is correct
+    git commit -m "your message"      // IMPORTANT: write a descriptive commit message
+    ```
 
 4. When you're done working on your feature (probably after several commits), it's time to rebase and merge your branch back into your master branch:
 
-```
-git checkout master               // check out your master branch
-git pull --rebase upstream master // just in case someone else pushed code
-git rebase *new-branch-name*      // http://git-scm.com/book/en/Git-Branching-Rebasing   
-git push origin master            // push your commits to your remote repo
-```
+    ```
+    git checkout master               // check out your master branch
+    git pull --rebase upstream master // just in case someone else pushed code
+    git rebase *new-branch-name*      // http://git-scm.com/book/en/Git-Branching-    Rebasing
+    git push origin master            // push your commits to your remote repo
+    ```
 
 5. Finally, if you think that your changes are ready to go live on our website, navigate to your repository on Github and click the button that says "Pull Request". Your changes will await approval by the Website Director. Following this, do NOT rebase.
 
-If you have access to the IEEEBerkeley group, then instead you can simply do:
-git push upstream master
+    If you have access to the IEEEBerkeley group, then instead you can simply do:
+    git push upstream master
 
 6. Occasionally while developing you may encounter merge conflicts. If the conflicts are with another developer's code that you don't fully understand, it is important to get in touch when resolving the conflict to make sure you don't mess up each other's code. For basic explanations on branching, merging, and conflict resolution: http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging
 
