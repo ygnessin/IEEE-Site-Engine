@@ -107,7 +107,7 @@ A Ruby framework designed for web development. This is our back-end: it accesses
 A markup language for web CONTENT. Should not be used for styling (that's CSS). Similarly, HTML styling tags such as `<b>` for bold are a thing of the past and should never be used. Our website uses HAML (file extension `.html.haml`), which is really just syntactic sugar over HTML, and nothing more. http://haml.info/about.html
 
 #####CSS
-For web STYLING. Should be kept separate from content (HTML). In-line CSS is bad practice, instead it should be in separate stylesheet files. Our website uses Sass (file extension `.scss`), which is just an extended form of CSS that provides more functionality. Regular CSS should work as usual. http://sass-lang.com/
+For web STYLING. Should be kept separate from content (HTML). In-line CSS is bad practice, instead it should be in separate stylesheet files. Our website uses Sass (file extension `.css.scss`), which is just an extended form of CSS that provides more functionality. Regular CSS should work as usual. http://sass-lang.com/
 
 #####Javascript
 A programming language that web browsers can interpret. Used for dynamically altering web pages AFTER they're loaded. If you've ever been on a webpage and seen it change after the browser already loads it, that's javascript. Like CSS, in-line JS is bad practice; it should be kept strictly in separate `.js` files if possible.
