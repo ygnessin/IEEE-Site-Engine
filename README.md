@@ -1,5 +1,5 @@
-####This repo has been DEPRECATED
-This repo has been replaced by a new (private) codebase and kept only for historical purposes
+###This repo has been DEPRECATED
+Following a site overhaul, this repo has been replaced by a new (private) codebase and kept only for historical purposes
 
 IEEE Website Documentation
 ==
